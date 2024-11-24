@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .Cards {
+            display: flex;
+            gap: 5rem;
+            margin: auto;
+            margin-top: 15rem;
+            width: 80%;
+            padding: auto;
+        }
+        .card:hover{
+            transform: scale(1.2);
+        }
+        .premium {
+            transform: scale(1.2);
+        }
+        .card {
+            width: 500px;
+            background-color: beige;
+            border-radius: 20px;
+            border-width: 10px;
+            text-align: center;
+            padding: 30px;
+            border: 3px solid gray;
+
+        }
+
+        .card>p {
+            font-size: 14px;
+        }
+
+        .card>button {
+            background-color: bisque;
+            border-radius: 20px;
+            color: black;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        @media (max-width:1250px){
+            .Cards{
+                flex-direction: column;
+                height: 100%;
+            }
+        }
+        @media (max-width:200px){
+            .Cards{
+                flex-direction: column;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Cards">
+        <div class="card">
+            <h4>Basic Plan</h4>
+            <h2>$11.99 / Month</h2>
+            <p>=>10 GB Storage</p>
+            <p>=>Only 1 User</p>
+            <p>=>No Support</p>
+            <button>Sign Up</button>
+        </div>
+        <div class="card premium">
+            <h4>Premium Plan</h4>
+            <h2>$11.99 / Month</h2>
+            <p>=>50 GB Storage</p>
+            <p>=>5 User</p>
+            <p>=>Phone & Email Support</p>
+            <button>Sign Up</button>
+        </div>
+        <div class="card">
+            <h4>Standard Plan</h4>
+            <h2>$11.99 / Month</h2>
+            <p>=>100 GB Storage</p>
+            <p>=>10 User</p>
+            <p>=>24/7 Support</p>
+            <button id="submit" type="submit" onclick="submit()">Sign Up</button>
+        </div>
+    </div>
+</body>
+<script>
+function submit(){
+   console.log("click");
+}
+</script>
+</html>
